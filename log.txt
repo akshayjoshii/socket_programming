@@ -1,0 +1,91 @@
+------------------------------------Client--------------------------------------
+
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\aksha\OneDrive\Desktop\DN\Assignment_3\Question_3>python clientTemplate.py
+Client connected to server: localhost : 9999
+
+Sending 'LIST_FILES' command to the server...
+
+[SERVER]: No files available at the moment!
+
+
+Sending 'UPLOAD' command to the server...
+
+[SERVER]: Please send corresponding filename and filesize!
+
+Sending filename & filesize to the server...
+Filename: hacker_cat.jpg, Filesize: 194560
+
+[SERVER]: Ready to receive the file
+
+Matching MD5 hashes (Client & Server) after UPLOAD...
+
+
+Client MD5 (Original Image): d41d8cd98f00b204e9800998ecf8427e
+
+
+Server MD5 (Uploaded/Downloaded Image): d41d8cd98f00b204e9800998ecf8427e
+
+
+-----Success-----
+
+
+Sending 'LIST_FILES' command to the server once again...
+
+[SERVER]: Following files are available:-
+
+d41d8cd98f00b204e9800998ecf8427e;hacker_cat;194560.jpg
+
+
+Sending 'DOWNLOAD' command to the server...
+
+[SERVER]: Please send a file ID
+
+Sending file ID to the server...
+
+File ID that is sent to server is: d41d8cd98f00b204e9800998ecf8427e
+
+Matching MD5 hashes (Client & Server) after DOWNLOAD...
+
+
+Client MD5 (Original Image): d41d8cd98f00b204e9800998ecf8427e
+
+
+Server MD5 (Uploaded/Downloaded Image): d41d8cd98f00b204e9800998ecf8427e
+
+
+-----Success-----
+
+
+Closing Client Socket...
+
+
+C:\Users\aksha\OneDrive\Desktop\DN\Assignment_3\Question_3>
+
+--------------------------------------------------------------------------------
+
+------------------------------------Server--------------------------------------
+
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\aksha\OneDrive\Desktop\DN\Assignment_3\Question_3>python serverTemplate.py
+Server is listening on port: 9999
+Client connected: ('127.0.0.1', 52782)
+
+
+
+Command received: LIST_FILES
+
+
+Command received: UPLOAD
+
+
+Command received: LIST_FILES
+
+
+Command received: DOWNLOAD
+
+--------------------------------------------------------------------------------
