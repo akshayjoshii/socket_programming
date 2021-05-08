@@ -10,9 +10,9 @@
     * The client connects to the server.
     * The server expects one of the following commands from the client:
 
-        > LIST FILES: The client sends the “LIST FILE” command in ASCII and awaits from the server a reply with a list of files that are available for download. The server’s reply format is “file1 id;file1 name;file1 size (newline) file2 id;file2 name;file2 size (newline) ...” or a custom message in case there are no files (for example: “No files available at the moment”).  
-        > DOWNLOAD: The client sends the “DOWNLOAD” command in ASCII. The server will reply, asking for a “file id” of the file that should be downloaded to the client. Then, the client sends the “file id” and awaits for the file as byte-stream.  
-        > UPLOAD: The client sends the “UPLOAD” command in ASCII. The server will reply, asking for the “File Name” and “File Size”. The client sends the file details in the following format “file name;file size” in ASCII. Once the server receives the file details, it will reply that it’s ready to receive the file as byte-stream. Only after this reply the client will start sending the file as byte-stream.  
+        > LIST FILES: The client sends the “LIST FILE” command in ASCII and awaits from the server a reply with a list of files that are available for download. The server’s reply format is “file1 id;file1 name;file1 size (newline) file2 id;file2 name;file2 size (newline) ...” or a custom message in case there are no files (for example: “No files available at the moment”).\
+        > DOWNLOAD: The client sends the “DOWNLOAD” command in ASCII. The server will reply, asking for a “file id” of the file that should be downloaded to the client. Then, the client sends the “file id” and awaits for the file as byte-stream.\
+        > UPLOAD: The client sends the “UPLOAD” command in ASCII. The server will reply, asking for the “File Name” and “File Size”. The client sends the file details in the following format “file name;file size” in ASCII. Once the server receives the file details, it will reply that it’s ready to receive the file as byte-stream. Only after this reply the client will start sending the file as byte-stream.
 
 2. Verification Phase:  
 
