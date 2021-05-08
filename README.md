@@ -1,4 +1,4 @@
-# File Transfer Simulation with MD5 Hash Check - Socket Programming
+# Socket Programming - File Transfer Simulation with Integrity Check
 
 ![Welcome](server_received_files/asset.png)
 
