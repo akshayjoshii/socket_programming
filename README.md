@@ -1,6 +1,6 @@
 # File Transfer Simulation with MD5 Hash Check - Socket Programming
 
-![Welcome](\server_received_files\asset.png)
+![Welcome](server_received_files\asset.png)
 
 **The application respects the following protocol:**
 
